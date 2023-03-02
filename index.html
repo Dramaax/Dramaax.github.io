@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+        <div class="conteneur">
+            <header>
+                <div class="conteneur-header">
+                    <h1>/YF/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#accueil" class="navbar-links" onclick="selection(this)">ACCUEIL</a></li>
+                            <li><a href="#parcours" onclick="selection(this)">PARCOURS</a></li>
+                            <li><a href="#logiciels" onclick="selection(this)">LOGICIELS</a></li>
+                            <li><a href="#stages" onclick="selection(this)">STAGES</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PROJETS</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icon du menu responsive -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="reseaux">
+                        <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="bienvenue">Bienvenue</p>
+                <h2>Je suis <span>Yannis Fourel</span>, Etudiant en Développement Web</h2>
+                <p class="description">Je suis en BTS Systèmes Infortmatiques aux Organisations option SLAM au Lycée Ella Fitzgerald. </p>
+                <a href="#portfolio">Voir les projets !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PARCOURS -->
+    <section id="parcours">
+        <div class="conteneur-photo">
+            <img src="img/photo-portfolio.jpg" alt="">
+        </div>
+        <div class="parcours">
+            <p class="titre-section">Présentation</p>
+            <h2>Bonjour, je suis <span>Yannis Fourel</span> </h2>
+            <h3>Etudiant en BTS SIO</h3>
+            <p>Je suis étudiant en BTS Systèmes Informatiques aux Organisations, option Solutions Logicielles Applicatives aux Métiers au lycée Ella Fitzgerald à St-Romain-En-Gal.
+                J'ai obtenu un baccalauréat STMG option Systèmes Informations de Gestion au lycée polyvalent Algoud Laffemas à Valence.
+            </p>
+            <a href="CV_Yannis_Fourel.pdf" download="CV_Yannis_Fourel">Télecharger CV !</a>
+        </div>
+    </section>
+
+    <!-- SECTION LOGICIELS -->
+    <section id="logiciels">
+        <h3 class="titre-section">Mes compétences</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-vsc.png" alt="" width="50" height="50">
+                <h4>Programmation Web</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>JS</li>
+                </ul>
+                <p>Editeur de code extensible développé par Microsoft pour Windows, Linux et macOS.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-vs.png" alt="" width="100" height="50">
+                <h4>Programmation Windows</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>C#</li>
+                    <li>Visual Studio</li>
+                </ul>
+                <p>Suite de logiciels de développement pour Windows et macOS conçu par Microsoft.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-android-studio.png" alt="" width="50" height="50">
+                <h4>Programmation Mobile</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Java</li>
+                    <li>SQLite</li>
+                </ul>
+                <p>Environnement de développement pour développer des applications mobiles Android.</p>
+            </div>
+        </div>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-intelliJ.png" alt="" width="50" height="50">
+                <h4>IntelliJ</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                </ul>
+                <p>Environnement de développement intégré destiné au développement de logiciels informatiques reposant sur la technologie Java.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-mysql.png" alt="" width="70" height="50">
+                <h4>Database MySQL</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>SQL</li>
+                </ul>
+                <p>Système de gestion de bases de données relationnelles.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-postman.png" alt="" width="100" height="50">
+                <h4>Postman</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>JSON</li>
+                </ul>
+                <p>Application permettant de tester des API.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION HABILITEES 
+    <section id="habilitees">
+    <div class="conteneur-skills" id="skills">
+        <h3>HABILITEES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="liste"> </span>Html & Css</p>
+                <span class="pourcentage">70%</span>
+            </div>
+
+            <div class="barre">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="liste"> </span>CSS</p>
+                <span class="pourcentage">70%</span>
+            </div>
+
+            <div class="barre">
+                <div class="" id="css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="liste"> </span>Bases de Données</p>
+                <span class="pourcentage">65%</span>
+            </div>
+
+            <div class="barre">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="liste"> </span>Photoshop</p>
+                <span class="pourcentage">85%</span>
+            </div>
+
+            <div class="barre">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+    <!-- SECTION STAGES -->
+    <section id="stages" class="stage">
+        <h3 class="titre-section">Mes stages</h3>
+        <div class="grid-stage">
+            <div class="stage-first">
+                <div class="computer">
+                    <img src="img/mac-stage1.png" alt="" width="500px" height="470px">
+                </div>
+                <div class="explain">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora ipsum suscipit cum corporis quos id autem consequuntur voluptatem qui.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, corporis?
+                    </p>
+                </div>
+            </div>
+            <div class="stage-second">
+                <div class="explain">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora ipsum suscipit cum corporis quos id autem consequuntur voluptatem qui.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, corporis?
+                    </p>
+                </div>
+                <div class="computer">
+                    <img src="img/mac-stage2.png" alt="" width="500px" height="460px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION PROJETS -->
+    <section id="portfolio">
+        <h3 class="titre-section">Mes projets</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/btn-gedimat.png" alt="" width="200" height="70">
+                <h4>Projet Gedimagination</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>JS</li>
+                </ul>
+                <p>Editeur de code extensible développé par Microsoft pour Windows, Linux et macOS.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-vs.png" alt="" width="100" height="50">
+                <h4>Programmation Windows</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>C#</li>
+                    <li>Visual Studio</li>
+                </ul>
+                <p>Suite de logiciels de développement pour Windows et macOS conçu par Microsoft.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-android-studio.png" alt="" width="50" height="50">
+                <h4>Programmation Mobile</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Java</li>
+                    <li>SQLite</li>
+                </ul>
+                <p>Environnement de développement pour développer des applications mobiles Android.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h3 class="titre-section">Contactez_moi</h3>
+        <div class="conteneur-form">
+            <form action="">
+                <div class="description-service mitad">
+                    <input type="text" placeholder="Prénom...*" class="input-mitad">
+                    <input type="email" placeholder="Email...*" class="input-mitad">
+                </div>
+                <div class="description-service">
+                    <input type="text" placeholder="Titre..." class="input-full">
+                </div>
+                <div class="description-service">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer !" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <p>Tout les droits réservés Fourel Yannis - 2023</p>
+        <div class="reseaux">
+            <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
