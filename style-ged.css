@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* *********************/
+/* seccion I N I C I O */
+/* *********************/
+
+#accueil {
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#accueil .conteneur header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#accueil .conteneur header .conteneur-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#accueil .conteneur header .conteneur-header h1 {
+    text-align: center;
+    color: #ff0000;
+    font-family: "Montserrat";
+}
+
+#accueil .conteneur header .conteneur-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#accueil .conteneur header .conteneur-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#accueil .conteneur header .conteneur-header nav ul li a:hover {
+    color: #ff0000;
+}
+
+#accueil .conteneur header .conteneur-header .reseaux a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#accueil .conteneur header .conteneur-header .reseaux a:hover {
+    color: #ff0000;
+}
+
+#accueil .conteneur header .conteneur-header .navbar-links {
+    color: #ffffff;
+}
+
+#accueil .conteneur .presentation {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil .conteneur .presentation .bienvenue {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#accueil .conteneur .presentation h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#accueil .conteneur .presentation h2 span {
+    font-size: 50px;
+    color: #ff0000;
+}
+
+#accueil .conteneur .presentation .description {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 19px;
+    text-align: center;
+}
+
+#accueil .conteneur .presentation .description span {
+    font-size: 20px;
+    color: #ff0000;
+}
+
+#accueil .conteneur .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#accueil .conteneur .presentation a:hover {
+    background-color: #ff0000;
+}
+
+#icon-nav {
+    color: #fff;
+    display: none;
+}
+
+/* *********************/
+/* section P R O J E T S */
+/* *********************/
+
+#portfolio {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#portfolio .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .description-contexte {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#portfolio .description-contexte p{
+    font-size: 19px;
+}
+
+#portfolio .description-contexte strong {
+    color: #ff0000;
+}
+
+#portfolio .description-contexte span {
+    color: #ff0000;
+}
+
+#portfolio .description-contexte .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#portfolio .description-contexte .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#portfolio .description-contexte .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#portfolio .description-contexte .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#portfolio .description-contexte .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#portfolio .description-contexte .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#portfolio .description-contexte .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* *********************/
+/* seccion C O N T A C T O */
+/* *********************/
+
+#contact {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+
+#contact .titre-section {
+    margin-bottom: 26px;
+}
+
+#contact .conteneur-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .conteneur-form .description-service {
+    margin-bottom: 15px;
+}
+
+#contact .conteneur-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .conteneur-form input,
+#contact .conteneur-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contact .conteneur-form .mitad input {
+    width: 48%;
+}
+
+#contact .conteneur-form .input-full {
+    width: 100%;
+}
+
+#contact .titre-section {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contact .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contact .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+/* *********************/
+/* seccion F O O T E R */
+/* *********************/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+
+@media screen and (max-width: 800px) {
+    .reseaux {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icon-nav {
+        display: block;
+    }
+    #accueil .conteneur .presentation .bienvenue {
+        display: none;
+      }
+    #accueil .conteneur .presentation h2 {
+        font-size: 26px;
+    }
+    #accueil .conteneur .presentation h2 span {
+        font-size: 35px;
+    }
+    /*section portfolio*/
+    #portfolio .description-contexte {
+        display: block;
+    }
+    #portfolio .description-contexte .projet {
+        margin: 10px auto;
+    }
+    /* seccion contact */
+    #contact {
+        padding: 50px 15px;
+    }
+    #contact .conteneur-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .conteneur-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
