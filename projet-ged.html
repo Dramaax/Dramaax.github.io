@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style-ged.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+        <div class="conteneur">
+            <header>
+                <div class="conteneur-header">
+                    <a href="index.html" class="title">/YF/</a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#accueil" class="navbar-links" onclick="selection(this)">ACCUEIL</a></li>
+                            <li><a href="#parcours" onclick="selection(this)">PARCOURS</a></li>
+                            <li><a href="#logiciels" onclick="selection(this)">LOGICIELS</a></li>
+                            <li><a href="#stages" onclick="selection(this)">STAGES</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PROJETS</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icon du menu responsive -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="reseaux">
+                        <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <h2>Projet<span> Gedimagination</span></h2>
+                <p class="description">Mettre en place le jeu concours en créant une <span>Application Web</span> / <span>Mobile</span> et une <span>API</span>. </p>
+                <a href="#contexte">Connaitre le projet !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTEXTE -->
+    <section id="contexte">
+        <h3 class="titre-section">Contexte</h3>
+        <div class="description-contexte">
+            <p>La société <strong>NEGOMAT</strong> vient tout juste d’entrer dans le réseau d’adhérents de <strong>GEDIMAT</strong>. Pour
+                fêter cet événement, NEGOMAT a décidé d’<strong>organiser un jeu concours</strong> nommé
+                « <strong>GEDIMA’GINATION</strong> »</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MISSION -->
+    <section id="mission">
+        <h3 class="titre-section">Mission</h3>
+        <div class="description-mission">
+            <p>Mettre en place un jeu concours en créant une <strong>application web</strong>, <strong>mobile</strong> et une <strong>API</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PRINCIPE -->
+    <section id="principe">
+        <h3 class="titre-section">Principe du jeu</h3>
+        <div class="description-principe">
+            <p>Le jeu est ouvert aux clients de NEGOMAT. Pour participer, 
+                il suffit de <strong>s’inscrire</strong> et <strong>poster une photo</strong> 
+                d’une réalisation faite à partir de matériaux achetés chez NEGOMAT. 
+            </p>
+        </div>
+        <div class="description-principe">
+            <p>Dans un deuxième temps, les clients de passage dans le magasin <strong>vote</strong> pour leurs 3 réalisations préférées. 
+                Les photos des réalisations seront consultables sur un écran TV. Les clients utiliseront une borne tablette installée dans le magasin pour saisir leurs votes. 
+                A la fin du concours, seront désignés les <strong>3 gagnants</strong>. Ceux-ci seront <strong>récompensés</strong>par des bons d’achat. 
+            </p>
+        </div>  
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h3 class="titre-section">Contactez_moi</h3>
+        <div class="conteneur-form">
+            <form action="">
+                <div class="description-service mitad">
+                    <input type="text" placeholder="Prénom...*" class="input-mitad">
+                    <input type="email" placeholder="Email...*" class="input-mitad">
+                </div>
+                <div class="description-service">
+                    <input type="text" placeholder="Titre..." class="input-full">
+                </div>
+                <div class="description-service">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer !" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <p>Tout les droits réservés Fourel Yannis - 2023</p>
+        <div class="reseaux">
+            <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

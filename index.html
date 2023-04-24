@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+        <div class="conteneur">
+            <header>
+                <div class="conteneur-header">
+                    <a href="index.html" class="title">/YF/</a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#accueil" class="navbar-links" onclick="selection(this)">ACCUEIL</a></li>
+                            <li><a href="#parcours" onclick="selection(this)">PROFIL</a></li>
+                            <li><a href="#logiciels" onclick="selection(this)">LOGICIELS</a></li>
+                            <li><a href="#stages" onclick="selection(this)">STAGES</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PROJETS</a></li>
+                            <li><a href="#veille" onclick="selection(this)">VEILLE</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icon du menu responsive -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="reseaux">
+                        <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="bienvenue">Bienvenue</p>
+                <h2>Je suis <span>Yannis Fourel</span>, Etudiant en Développement Web</h2>
+                <p class="description">Je suis en BTS Systèmes Infortmatiques aux Organisations option SLAM au Lycée Ella Fitzgerald. </p>
+                <a href="#portfolio">Voir les projets !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PARCOURS -->
+    <section id="parcours">
+        <div class="conteneur-photo">
+            <img src="img/photo-portfolio.jpg" alt="">
+        </div>
+        <div class="parcours">
+            <p class="titre-section">Présentation</p>
+            <h2>Bonjour, je suis <span>Yannis Fourel</span>, <span>19</span> ans.</h2>
+            <h3>Etudiant en BTS SIO</h3>
+            <p>Je suis étudiant en BTS Systèmes Informatiques aux Organisations, option Solutions Logicielles Applicatives aux Métiers au lycée Ella Fitzgerald à St-Romain-En-Gal.
+                J'ai obtenu un baccalauréat STMG option Systèmes Informations de Gestion au lycée polyvalent Algoud Laffemas à Valence.
+            </p>
+            <a href="CV_Yannis_Fourel.pdf" download="CV_Yannis_Fourel">Télecharger CV !</a>
+        </div>
+    </section>
+    <!--==== SECTION QUALIFICATION ====-->
+    <section class="qualifications">
+        <div class="qualification-title">
+            <span>Parcours</span>
+        </div>
+        <div class="icon-case">
+            <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+            <span>Études</span>
+        </div>
+        <div class="study-grid">
+            <div class="study">
+                <span class="study-title">BTS SIO <br>Option SLAM</span>
+                <span class="study-location">Vienne - Ella Fitzgerald</span>
+                <span class="study-date"><i class="fa-regular fa-calendar"></i> 2021 - 2023</span>
+            </div>
+            <div class="separation first-sep">
+                <div class="study-round"></div>
+                <div class="study-line"></div>
+            </div>
+            <div class="study-space"></div>
+        </div>
+        <div class="study-grid">
+            <div class="study-space"></div>
+            <div class="separation second-sep">
+                <div class="study-round"></div>
+                <div class="study-line"></div>
+            </div>
+            <div class="study">
+                <span class="study-title">BAC STMG<br>Option SIG</span>
+                <span class="study-location">Valence - Lycée Algoud Laffemas</span>
+                <span class="study-date"><i class="fa-regular fa-calendar"></i> 2019 - 2021</span>
+            </div>
+        </div>
+            <div class="separation third-sep">
+                <div class="study-round"></div>
+                <div class="study-line"></div>
+            </div>
+            <div class="study-space"></div>
+        </div>
+    </section>
+    <!-- SECTION LOGICIELS -->
+    <section id="logiciels">
+        <h3 class="titre-section">Mes compétences</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-vsc.png" alt="" width="50" height="50">
+                <h4>Programmation Web</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>JS</li>
+                </ul>
+                <p>Editeur de code extensible développé par Microsoft pour Windows, Linux et macOS.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-vs.png" alt="" width="100" height="50">
+                <h4>Programmation Windows</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>C#</li>
+                    <li>Visual Studio</li>
+                </ul>
+                <p>Suite de logiciels de développement pour Windows et macOS conçu par Microsoft.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-android-studio.png" alt="" width="50" height="50">
+                <h4>Programmation Mobile</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Java</li>
+                    <li>SQLite</li>
+                </ul>
+                <p>Environnement de développement pour développer des applications mobiles Android.</p>
+            </div>
+        </div>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-intelliJ.png" alt="" width="50" height="50">
+                <h4>Programmation Java</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                </ul>
+                <p>Environnement de développement intégré destiné au développement de logiciels informatiques reposant sur la technologie Java.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-mysql.png" alt="" width="70" height="50">
+                <h4>Bases de données</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>MySQL</li>
+                    <li>HeidiSQL</li>
+                </ul>
+                <p>Système de gestion de bases de données relationnelles.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-postman.png" alt="" width="100" height="50">
+                <h4>Postman</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>JSON</li>
+                </ul>
+                <p>Application permettant de tester des API.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION STAGES -->
+    <section id="stages" class="stage">
+        <h3 class="titre-section">Mes stages</h3>
+        <div class="grid-stage">
+            <div class="stage-first">
+                <div class="computer">
+                    <img src="img/mac-stage1.png" alt="" width="500px" height="470px">
+                </div>
+                <div class="explain">
+                    <p>
+                        J'ai dû tout coder un site avec bootstrap avec comme seule aide</br>
+                        une maquette Photoshop en utilisant HTML, CSS et un peu de PHP.
+                    </p>
+                    <a href="stage1.html" class="button">Voir plus</a>
+                </div>
+            </div>
+            <div class="stage-second">
+                <div class="explain">
+                    <p>
+                        Coder le site de la start-up d'hébergement du stage, coder avec Divi, un plugin Wordpress</br>
+                        qui permet d'avoir plus de choix et de liberté et des fonctionnalités supplémentaires.
+                    </p>
+                    <a href="stage2.html" class="button">Voir plus</a>
+                </div>
+                <div class="computer">
+                    <img src="img/mac-stage2.png" alt="" width="500px" height="460px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION PROJETS -->
+    <section id="portfolio">
+        <h3 class="titre-section">Mes projets</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/btn-gedimat.png" alt="" width="200" height="70">
+                <h4>Projet Gedimagination</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>JAVA</li>
+                </ul>
+                <p>Projet de deuxième année sur un jeu concours organisé par Gedimat et Negomat.</p>
+                <a href="projet-ged.html" class="button">Voir plus</a>
+            </div>
+            <div class="service">
+                <img src="img/logo-asc.png" alt="" width="200" height="70">
+                <h4>Projet Groupe ASC Chantemerle</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <p>Projet de première année, un site pour mon ancien club de basket fait en classe par groupe.</p>
+                <a href="projet-asc.html" class="button">Voir plus</a>
+            </div>
+            <div class="service">
+                <img src="img/logo-wf.png" alt="" width="200" height="70">
+                <h4>Projet stage Wade Invest</h4>
+                <hr>
+                <ul class="logiciels-tag">
+                    <li>Wordpress (Divi)</li>
+                    <li>CSS</li>
+                </ul>
+                <p>Site réalisé en stage pour l'entreprise d'accueil .</p>
+                <a href="stage2.html" class="button">Voir plus</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION VEILLE INFORMATIONNELLE -->
+    <section id="veille">
+        <h3 class="titre-section">Veille Informationnelle</h3>
+        <h4 class="titre-section2">L'intelligence articielle</h4>
+        <div class="description-veille">
+            <p>L’intelligence artificielle ou “IA” est aujourd’hui sur toutes les lèvres. Pas un métier n’échappe à son influence directe ou indirecte à court, moyen ou long terme. 
+                Et les métiers de l’intelligence économique ne font pas exceptions à la règle.</br></p>
+        </div>
+        <!---->
+        <div class="description-veille">
+            <p>De toutes les questions stratégiques auxquelles la veille fait face, 
+                l’IA se démarque tant ses apports ont et auront une incidence sur la manière d’exercer cette expertise.</br></p>
+        </div>
+        <!---->
+        <div class="description-veille">
+            <p>Mais le veilleur doit-il en avoir peur pour autant ? </br>
+                Ces deux formes “d’intelligences” (artificielle et économique) font-elles bon ménage ? Comment la première a un effet sur la seconde à l’heure actuelle ?</p>
+        </div>
+        <!---->
+        <h4 class="titre-section2">Qu'est-ce que l'intelligence Artificielle (IA) ?</h4>
+        <div class="description-veille">
+            <p>L’intelligence artificielle (IA) est un domaine qui combine l’informatique et des ensembles de données solides pour permettre la résolution de problèmeset vise à 
+                aider les gens à comprendre et à tirer parti de l’intelligence artificielle tout en étant conscients des risques et en travaillant à les atténuer. </br>
+                
+                Elle consiste à mettre en œuvre un certain nombre de techniques visant à simuler l’intelligence humaine. L’IA peut intervenir dans des fonctions telles que l’aide aux diagnostics, 
+                l’aide à la décision et la résolution de problèmes complexes.</br></p>
+        </div>
+        <!---->
+        <div class="description-veille">
+            <p>Il existe plusieurs définitions de l’IA. </br>
+                
+            - Selon John McCarthy, l’un des créateurs du terme, l’IA est « la science et l’ingénierie de la fabrication de machines intelligentes, en particulier de programmes informatiques intelligents ».</br>
+                 
+            - Marvin Lee Minsky, un autre pionnier de l’IA, la définit comme « la construction de programmes informatiques qui s’adonnent à des tâches qui sont, pour l’instant, 
+            accomplies de façon plus satisfaisante par des êtres humains car elles demandent des processus mentaux de haut niveau tels que : l’apprentissage perceptuel, 
+            l’organisation de la mémoire et le raisonnement critique ».</p>
+        </div>
+        <div class="description-veille">       
+            <p>Il existe également des formes théoriques d’IA, telles que l’intelligence artificielle générale (IAG), dans laquelle une machine
+                aurait une intelligence égale à celle des êtres humains et serait capable de résoudre des problèmes, d’apprendre et de planifier l’avenir.
+            </p>
+        </div>
+        <hr>
+        <!---->
+        <h4 class="titre-section2">Le rôle d l'IA dans le futur ?</h4>
+        <h5 class="titre-section3">1. Collecte</h5>
+        Reconnaissance vocale (‘speech-to-text’)
+        <div class="description-veille">
+            <p>
+                Une exploration intelligente (‘smart crawling’) des sources d’information permet à l’outil d’identifier d’autres sources appropriées qui ne sont jusqu’alors pas suivies.
+                En fonction de l’intérêt du sujet exploré, et du périmètre préalablement défini de sa veille, l’IA aide le veilleur à élargir son spectre de recherche.
+            </p>
+        </div>
+        <h5 class="titre-section4">Vérification de l’information et de sa qualité</h5>
+        <div class="description-veille">
+            <p>
+                Une autre fonctionnalité consiste à filtrer la pertinence des informations recueillies en fonction de différents critères pondérés. 
+	            Exemples : l’outil pourra juger de la qualité des données par rapport à la construction du site de la source, de son niveau de référencement, 
+	            des avis qui y sont laissés, du nombre d’articles publiés, etc.
+            </p>
+        </div>
+        <!---->
+        <h5 class="titre-section3">2. Traitement</h5>
+        <h5 class="titre-section4">Reconnaissance vocale (‘speech-to-text’)</h5>
+        <div class="description-veille">
+            <p>
+            Transformation, découpage et analyse automatique d’enregistrements audios en formats textes.
+            </p>
+        </div>
+        <h5 class="titre-section4">Reconnaissance visuelle</h5>
+        <div class="description-veille">
+            <p>
+                Conversion (ou océrisation) de fichiers images en formats textes avec détection d’éléments visuels (logo de marque, produit, personne, etc.).
+            </p>
+        </div>
+        <!---->
+        <h5 class="titre-section3">3. Analyse</h5>
+        <h5 class="titre-section4">Révélation de nouveaux éléments clés</h5>
+        <div class="description-veille">
+            <p>
+                Un autre apport de l’IA repose sur l’identification active de nouveaux concepts ou nouvelles notions. 
+                Un recueil et une contextualisation des informations permet par exemple de détecter facilement les nouvelles entreprises, personnes, technologies, etc. …, pouvant être citées.
+            </p>
+        </div>
+        <h5 class="titre-section4">Synthèse automatisée de contenus</h5>
+        <div class="description-veille">
+            <p>
+                L’outil génère automatiquement un résumé de l’article en veillant à ne conserver que les idées les plus importantes.
+            </p>
+        </div>
+        <!---->
+        <h5 class="titre-section3">4. Diffusion</h5>
+        <h5 class="titre-section4">Validation de l’information par apprentissage (‘machine learning’)</h5>
+        <div class="description-veille">
+            <p>
+                L’outil apprend au fur et à mesure de son expérience. Il analyse les données dans le temps et anticipe les comportements en s’adaptant à l’utilisateur.
+            </p>
+        </div>
+        <h5 class="titre-section4">Ciblage amélioré des contenus</h5>
+        <div class="description-veille">
+            <p>
+                L’étude approfondie des statistiques de consultations permet à l’IA  de favoriser la diffusion des contenus les plus pertinents pour chaque lecteur.
+            </p>
+        </div>
+        <!---->
+        <h5 class="titre-section3">5. Action</h5>
+        <h5 class="titre-section4">Mise en évidence de signaux faibles</h5>
+        <div class="description-veille">
+            <p>
+                L’outil intelligent croise divers éléments concordants pour déceler les futurs facteurs qui influenceront l’activité de l’entreprise.
+            </p>
+        </div>
+        <h5 class="titre-section4">Analyse prédictive</h5>
+        <div class="description-veille">
+            <p>
+                L’IA, via une analyse prospective, permet aux décideurs d’identifier plus facilement les futures tendances de marché (ex : consommation, innovations, évolutions réglementaires, etc.).
+            </p>
+        </div>
+        <hr>
+        <div class="description-veille">
+            <p>
+                Bien que l’IA puisse avoir des impacts négatifs, tels que la perte d’emplois et la prise de décisions biaisées, ces risques sont souvent liés à la façon dont l’IA est conçue et utilisée. 
+                Il est donc crucial de mettre en place des réglementations et des normes de sécurité appropriées pour garantir un développement éthique et responsable de l’IA.
+            </p>
+        </div>
+        <div class="description-veille">
+            <p>
+                L’IA peut également avoir des impacts positifs majeurs sur la société, tels que l’amélioration de l’efficacité industrielle, la prévention des maladies et l’amélioration des soins de santé. 
+            </p>
+        </div>
+        <!---->
+        <h4 class="titre-section2">Quel avenir pour l’Homme face à l’IA ?</h4>
+        <div class="description-veille">
+            <p>
+                C’est certainement la question qui revient le plus lorsque l’intelligence artificielle est évoquée. Et ce, quel que soit le domaine ou le métier abordé. Cette problématique n’est en soi pas nouvelle. 
+                Depuis l’amélioration des procédés techniques et l’apparition des premières machines, l’Homme a toujours craint pour son avenir. Une peur de ne plus se savoir utile sans doute ?
+            </p>
+        </div>
+        <h5 class="titre-section5">Alors qu’en est-il vraiment pour la veille ?</h5>
+        <div class="description-veille">
+            <p>
+                Tout d’abord, précisions que l’IA n’en est encore qu’à ses prémices en matière d’intelligence économique. 
+                Aujourd’hui, on parle davantage de Machine Learning ou de Deep Learning, qui ne sont finalement qu’une des formes de ce que pourrait être l’IA. 
+                La véritable intelligence artificielle, c’est-à-dire celle qui est parfaitement autonome et qui constitue une entité à part entière, n’existe pour le moment pas encore. 
+            </p>
+        </div>
+        <div class="description-veille">
+            <p>
+                Enfin, il ne s’agit pas de remplacer le veilleur. </br>
+                Le fruit de son expertise, son esprit critique, et l’intelligence humaine au sens large 
+                continue d’apporter de la valeur à chaque stade du processus de veille. En revanche, l’IA vient en appui de son travail quotidien. 
+                Elle lui simplifie ses tâches journalières afin qu’il reste au cœur des actions de veille, et lui garantisse une meilleure visibilité dans ses prises de décisions.
+            </p>
+        </div>
+    </section>
+    
+    <!-- FIN SECTION VEILLE INFORMATIONNELLE -->
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h3 class="titre-section">Contactez moi</h3>
+        <div class="conteneur-form">
+            <form action="">
+                <div class="description-service mitad">
+                    <input type="text" placeholder="Prénom...*" class="input-mitad">
+                    <input type="email" placeholder="Email...*" class="input-mitad">
+                </div>
+                <div class="description-service">
+                    <input type="text" placeholder="Titre..." class="input-full">
+                </div>
+                <div class="description-service">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer !" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <p>Tout les droits réservés Fourel Yannis - 2023</p>
+        <div class="reseaux">
+            <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

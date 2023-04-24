@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style-ged.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+        <div class="conteneur">
+            <header>
+                <div class="conteneur-header">
+                    <a href="index.html" class="title">/YF/</a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#accueil" class="navbar-links" onclick="selection(this)">ACCUEIL</a></li>
+                            <li><a href="#parcours" onclick="selection(this)">PARCOURS</a></li>
+                            <li><a href="#logiciels" onclick="selection(this)">LOGICIELS</a></li>
+                            <li><a href="#stages" onclick="selection(this)">STAGES</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PROJETS</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icon du menu responsive -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="reseaux">
+                        <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <h2>Stage<span> Creation Site Net</span></h2>
+                <p class="description">Créer le site d'une entreprise de conseil à partir d'une <span>maquette Photoshop</span> pour une entreprise nommé <span>Procure Process</span>. </p>
+                <a href="#contexte">Connaitre le projet !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTEXTE -->
+    <section id="contexte">
+        <h3 class="titre-section">Contexte</h3>
+        <div class="description-contexte">
+            <p>J'ai effectué mon stage chez <strong>Création Site Net</strong>, un auto-entrepreneur sur Chambéry.</br>
+            Son coeur de métier, le <strong>maquettage Photoshop</strong> et la <strong>création de site internet</strong> pour des particuliers</p>
+        </div>
+    </section>
+
+    <!-- SECTION MISSION -->
+    <section id="mission">
+        <h3 class="titre-section">Mission</h3>
+        <div class="description-mission">
+            <p>Mettre en place le site internet d'une fausse entreprise prénommé <strong>Procure Process</strong>.</br>
+            Ce projet était un projet d'entrainement de 1 mois pour mieux apprendre les différents languages de développement.</br>
+            C'est grâce à ce projet que j'ai pû apprendre <strong>Bootstrap5.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION LOGICIELS -->
+    <section id="logiciels">
+        <h3 class="titre-section">Langages utilisés</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-boot.png" alt="" width="50" height="50">
+                <h4>Bootstrap5</h4>
+                <hr>
+                <p>Infrastructure de développement frontale, gratuite et open source pour la création de sites et d'applications Web.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-dev.png" alt="" width="50" height="50">
+                <h4>HTML / CSS</h4>
+                <hr>
+                <p>Langages de balisage utilisé pour la création de pages web et de mise en forme des pages web.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION PRES-RENCONTREZ -->
+    <section id="pres-decouvrez-nous">
+        <h3 class="titre-section">Image Site</h3>
+        <div class="description-decouvrez-nous">
+            <p>Voici la seule image que j'ai pû récupérer car mes dossiers de sauvegardes sont irrécupérables dû à une défaillance de mon matériel.
+            </p>
+        </div>
+        <div>
+            <img src="img/photo-header-portfolio.jpg" width="1500" height="600">
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h3 class="titre-section">Contactez_moi</h3>
+        <div class="conteneur-form">
+            <form action="">
+                <div class="description-service mitad">
+                    <input type="text" placeholder="Prénom...*" class="input-mitad">
+                    <input type="email" placeholder="Email...*" class="input-mitad">
+                </div>
+                <div class="description-service">
+                    <input type="text" placeholder="Titre..." class="input-full">
+                </div>
+                <div class="description-service">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer !" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <p>Tout les droits réservés Fourel Yannis - 2023</p>
+        <div class="reseaux">
+            <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

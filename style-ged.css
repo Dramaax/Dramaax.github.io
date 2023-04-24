@@ -1,0 +1,1058 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* *********************/
+/* seccion I N I C I O */
+/* *********************/
+
+#accueil {
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#accueil .conteneur header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#accueil .conteneur header .conteneur-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#accueil .conteneur header .conteneur-header .title {
+    text-align: center;
+    color: #ff0000;
+    font-family: "Montserrat";
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#accueil .conteneur header .conteneur-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#accueil .conteneur header .conteneur-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#accueil .conteneur header .conteneur-header nav ul li a:hover {
+    color: #ff0000;
+}
+
+#accueil .conteneur header .conteneur-header .reseaux a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#accueil .conteneur header .conteneur-header .reseaux a:hover {
+    color: #ff0000;
+}
+
+#accueil .conteneur header .conteneur-header .navbar-links {
+    color: #ffffff;
+}
+
+#accueil .conteneur .presentation {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil .conteneur .presentation .bienvenue {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#accueil .conteneur .presentation h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#accueil .conteneur .presentation h2 span {
+    font-size: 50px;
+    color: #ff0000;
+}
+
+#accueil .conteneur .presentation .description {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 19px;
+    text-align: center;
+}
+
+#accueil .conteneur .presentation .description span {
+    font-size: 20px;
+    color: #ff0000;
+}
+
+#accueil .conteneur .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#accueil .conteneur .presentation a:hover {
+    background-color: #ff0000;
+}
+
+#icon-nav {
+    color: #fff;
+    display: none;
+}
+
+/* *********************/
+/* section LOGICIELS */
+/* *********************/
+        
+    #logiciels {
+        padding: 100px 15px;
+        text-align: center;
+        background-color: #f3f3f3;
+    }
+        
+    #logiciels .titre-section {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: #d3d3d3;
+        text-decoration-thickness: 5px;
+    }
+        
+    #logiciels .description-service {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 30px auto;
+    }
+        
+    #logiciels .description-service .service {
+        max-width: 350px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: .5s;
+    }
+        
+    #logiciels .description-service .service:hover {
+        box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+    }
+        
+    #logiciels .description-service .service .icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #d3d3d3;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+        
+    #logiciels .description-service .service h4 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+        
+    #logiciels .description-service .service hr {
+        width: 30%;
+        margin: auto;
+        color: #000;
+        margin-bottom: 25px;
+    }
+        
+    #logiciels .description-service .service ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+        
+    #logiciels .description-service .service p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* *********************/
+    /* section I M A G E S*/
+    /* *********************/
+
+    #images .titre-section {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: #d3d3d3;
+        text-decoration-thickness: 5px;
+    }
+    
+    #images .card-container {
+        display: flex;
+        justify-content: center;	
+        margin-top: 150px;
+        }
+        
+    #images .card {
+        height: 200px;
+        width:  400px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: inline-flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #images .card2 {
+        height: 200px;
+        width:  400px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: inline-flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+        
+    #images .card-top {
+        border-radius: 8px;
+        width: 400px;
+        background: white;
+        height: 200px;
+        position: absolute;
+        z-index: 8;
+        transition: transform .5s;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+        
+    #images .card1 {
+        background-image: url(img/photo-header-portfolio.jpg);	
+        background-size: cover;
+        border: 3px solid white;
+    }
+        
+    #images .card:hover .card-top {
+        transform: translateY(-120px);
+    }
+        
+    #images .card-bottom {
+        background: #FAF9F6;
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+        
+    #images .card-contents {
+        color: black;
+        padding: 90px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    #images .card-contents p{
+        margin: 7px 0px;
+    }
+        
+    #images .card-title {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+        
+
+/* *********************/
+/* section P R O J E T S */
+/* *********************/
+
+#contexte {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#contexte .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contexte .description-contexte {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#contexte .description-contexte p{
+    font-size: 19px;
+}
+
+#contexte .description-contexte strong {
+    color: #ff0000;
+}
+
+#contexte .description-contexte span {
+    color: #ff0000;
+}
+
+#contexte .description-contexte .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#contexte .description-contexte .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#contexte .description-contexte .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#contexte .description-contexte .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#contexte .description-contexte .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#contexte .description-contexte .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#contexte .description-contexte .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Partie Mission*/
+
+#mission {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#mission .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#mission .description-mission {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#mission .description-mission p{
+    font-size: 19px;
+}
+
+#mission .description-mission strong {
+    color: #ff0000;
+}
+
+#mission .description-mission span {
+    color: #ff0000;
+}
+
+#mission .description-mission .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#mission .description-mission .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#mission .description-mission .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#mission .description-mission .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#mission .description-mission .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#mission .description-mission .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#mission .description-mission .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Partie PRINCIPE*/
+
+#principe {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#principe .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#principe .description-principe {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#principe .description-principe p{
+    font-size: 19px;
+}
+
+#principe .description-principe strong {
+    color: #ff0000;
+}
+
+#principe .description-principe span {
+    color: #ff0000;
+}
+
+#principe .description-principe .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#principe .description-principe .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#principe .description-principe .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#principe .description-principe .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#principe .description-principe .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#principe .description-principe .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#principe .description-principe .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Partie ACCUEIL SITE*/
+
+#accueil-site {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#accueil-site .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#accueil-site .description-accueil-site {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#accueil-site .description-accueil-site p{
+    font-size: 19px;
+}
+
+#accueil-site .description-accueil-site strong {
+    color: #ff0000;
+}
+
+#accueil-site .description-accueil-site span {
+    color: #ff0000;
+}
+
+#accueil-site .description-accueil-site .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#accueil-site .description-accueil-site .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#accueil-site .description-accueil-site .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#accueil-site .description-accueil-site .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#accueil-site .description-accueil-site .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#accueil-site .description-accueil-site .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#accueil-site .description-accueil-site .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Partie PRES-SITE*/
+
+#pres-site {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#pres-site .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#pres-site .description-pres-site {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#pres-site .description-pres-site p{
+    font-size: 19px;
+    line-height: 2.25rem;
+}
+
+#pres-site .description-pres-site strong {
+    color: #ff0000;
+}
+
+#pres-site .description-pres-site span {
+    color: #ff0000;
+}
+
+#pres-site .description-pres-site .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#pres-site .description-pres-site .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#pres-site .description-pres-site .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#pres-site .description-pres-site .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#pres-site .description-pres-site .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#pres-site .description-pres-site .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#pres-site .description-pres-site .service p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*Partie PRES DECOUVREZ NOUS*/
+
+#pres-decouvrez-nous {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#pres-decouvrez-nous .titre-section {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous p{
+    font-size: 19px;
+    line-height: 2.25rem;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous strong {
+    color: #ff0000;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous span {
+    color: #ff0000;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+#pres-decouvrez-nous .description-decouvrez-nous .service p {
+    font-size: 14px;
+    line-height: 2.25rem;
+}
+
+.slider-wrapper {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    height: calc(100vh - 2rem);
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+  }
+  
+  .slide-arrow:hover,
+  .slide-arrow:focus {
+    opacity: 1;
+  }
+  
+  #slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  #slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }
+  
+  .slide:nth-child(1) {
+    background-image: url("../../img/photo-decouvrez-nous.png");
+    margin: 0;
+    background-repeat :no-repeat;
+  }
+  
+  .slide:nth-child(2) {
+    background-image: url("../../img/photo-decouvrez-nous2.png");
+    margin: 0;
+    background-repeat :no-repeat;
+  }
+
+  .slide:nth-child(3) {
+    background-image: url("../../img/photo-decouvrez-nous3.png");
+    margin: 0;
+    background-repeat :no-repeat;
+  }
+  
+  .slide:nth-child(4) {
+    background-image: url("../../img/photo-decouvrez-nous4.png");
+    margin: 0;
+    background-repeat :no-repeat;
+  }
+
+  /* PRES RENCONTREZ-NOUS */
+
+  #pres-decouvrez-nous #card{
+    width: 75%;
+    padding-top: 1%;
+}
+
+#pres-decouvrez-nous #card #gauche{
+    float: left;
+    width:60%;
+    margin-left: 5%;
+}
+
+#pres-decouvrez-nous #card #droite{
+    margin-left:70%;
+    width: 53%
+}
+  
+  
+/* *********************/
+/* section C O N T A C T */
+/* *********************/
+
+#contact {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+
+#contact .titre-section {
+    margin-bottom: 26px;
+}
+
+#contact .conteneur-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .conteneur-form .description-service {
+    margin-bottom: 15px;
+}
+
+#contact .conteneur-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .conteneur-form input,
+#contact .conteneur-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contact .conteneur-form .mitad input {
+    width: 48%;
+}
+
+#contact .conteneur-form .input-full {
+    width: 100%;
+}
+
+#contact .titre-section {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contact .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contact .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+/* *********************/
+/* seccion F O O T E R */
+/* *********************/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+
+@media screen and (max-width: 800px) {
+    .reseaux {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icon-nav {
+        display: block;
+    }
+    #accueil .conteneur .presentation .bienvenue {
+        display: none;
+      }
+    #accueil .conteneur .presentation h2 {
+        font-size: 26px;
+    }
+    #accueil .conteneur .presentation h2 span {
+        font-size: 35px;
+    }
+    /*section portfolio*/
+    #portfolio .description-contexte {
+        display: block;
+    }
+    #portfolio .description-contexte .projet {
+        margin: 10px auto;
+    }
+    /* seccion contact */
+    #contact {
+        padding: 50px 15px;
+    }
+    #contact .conteneur-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .conteneur-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style-ged.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+        <div class="conteneur">
+            <header>
+                <div class="conteneur-header">
+                    <a href="index.html" class="title">/YF/</a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#accueil" class="navbar-links" onclick="selection(this)">ACCUEIL</a></li>
+                            <li><a href="#parcours" onclick="selection(this)">PARCOURS</a></li>
+                            <li><a href="#logiciels" onclick="selection(this)">LOGICIELS</a></li>
+                            <li><a href="#stages" onclick="selection(this)">STAGES</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PROJETS</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icon du menu responsive -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="reseaux">
+                        <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <h2>Stage<span> Wade Invest</span></h2>
+                <p class="description">Créer le site de l'entreprise d'accueil <span>Wade Invest</span> ayant comme domaine d'activité le <span>financement</span> et la <span>recherche de fond</span> pour des entreprises.</p>
+                <a href="#contexte">Connaitre le projet !</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTEXTE -->
+    <section id="contexte">
+        <h3 class="titre-section">Contexte</h3>
+        <div class="description-contexte">
+            <p>J'ai effectué mon stage chez <strong>Wade Invest</strong>, une nouvelle start-up sur <strong>Lyon</strong> qui aide</br> 
+                les nouvelles entreprise dans la <strong>recherche de financement</strong> et de <strong>conseil</strong>.</p>
+        </div>
+    </section>
+
+    <!-- SECTION MISSION -->
+    <section id="mission">
+        <h3 class="titre-section">Mission</h3>
+        <div class="description-mission">
+            <p>Mettre en place le site internet de l'entreprise d'accueil <strong>Wade Invest</strong> afin de se <strong>démarquer</strong> parmi les concurrents .</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION LOGICIELS -->
+    <section id="logiciels">
+        <h3 class="titre-section">Langages utilisés</h3>
+        <div class="description-service">
+            <div class="service">
+                <img src="img/icon-wordpress.png" alt="" width="100" height="60">
+                <h4>Wordpress</h4>
+                <hr>
+                <p>WordPress est un CMS (Content Management System), c'est à dire un outil permettant de publier et de gérer des contenus sur Internet.</p>
+            </div>
+            <div class="service">
+                <img src="img/icon-divi.png" alt="" width="80" height="70">
+                <h4>Divi</h4>
+                <hr>
+                <p>Puissant éditeur de sites Web qui propose un éditeur visuel.</br> 
+                Il permet de créer et modifier des pages Web sans code informatique ni connaissances en programmation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ACCUEIL SITE -->
+    <section id="accueil-site">
+        <h3 class="titre-section">Présentation</h3>
+        <div class="description-accueil-site">
+            <p>Voici la page d'accueil du site avec sa page d'arrivée sur des couleurs bleu et jaune. </br>
+                Présentant l'entreprise, présentant pour qui ces services sont à dispostion ainsi que ces points forts.
+            </p>
+        </div>
+        <div class="img-accueil">
+            <img src="img/Screenshot_1.png" width="1000" height="600">
+        </div>
+    </section>
+
+    <!-- SECTION PRES-SERVICE -->
+    <section id="pres-site">
+        <h3 class="titre-section">Présentation Services</h3>
+        <div class="description-pres-site">
+            <p>L'onglet <span>"Nos Services"</span> est présenter avec les 3 offres que l'entreprise Wade Invest propose à ses clients. </br>
+                Les offres sont :</br>
+                - <strong>Wade Business</strong>, elle met les clients à la disposition des partenaires locaux et internationaux pertinents pour accélérer votre projet de création ou de développement si le client souhaite se développer dans un autre pays.</br>
+                - <strong>Wade Finance</strong>, elle accompagne les entreprises dans l’obtention de financements publics et privés pour mener à bien leur projet de création ou de développement de leur en France ou l’international.</br>
+                - <strong>Wade Link</strong>,évalue les besoins, recherche et sélectionne pour le client des partenaires pertinents et fiables pour développer son réseau professionnel local et accélérer sa croissance. 
+            </p>
+        </div>
+        <div class="video-services">
+            <video width="1000" height="600" controls frameborder="0.1" autoplay loop>
+            <source src="img/video-services.mp4" type="video/mp4">
+        </div>
+    </section>
+
+    <!-- SECTION PRES-DECOUVREZ-NOUS -->
+    <section id="pres-decouvrez-nous">
+        <h3 class="titre-section">Présentation Découvrez-nous</h3>
+        <div class="description-decouvrez-nous">
+            <p>L'onglet <span>"Découvrez-nous"</span>, présente l'entreprise et son domaine d'activité, présente son engagement et comment elle le met à disposition du client et enfin ses valeurs</br>
+                Cet onglet présente aussi l'équipe de <strong>Wade Invest</strong> ainsi que les experts qui l'accompagne.
+            </p>
+        </div>
+    <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+            &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+            &#8250;
+            </button>
+        <ul class="slides-container" id="slides-container">
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+        </ul>
+    </section>  
+    </section>
+
+    <!-- SECTION PRES-ACTUALITES -->
+    <section id="pres-decouvrez-nous">
+        <h3 class="titre-section">Présentation Actualités</h3>
+        <div class="description-decouvrez-nous">
+            <p>L'onglet <span>"Actualités"</span>, présente des articles sur les différents conseils qu'elle donne au gens pour par exemple optimiser sa trésorerie.
+            </p>
+        </div>
+        <div class="img-accueil">
+            <img src="img/photo-actualites.png" width="1000" height="600">
+        </div>
+    </section>
+
+    <!-- SECTION PRES-RENCONTREZ -->
+    <section id="pres-decouvrez-nous">
+        <h3 class="titre-section">Présentation Rencontrez-nous</h3>
+        <div class="description-decouvrez-nous">
+            <p>L'onglet <span>"Rencontrez-nous"</span>, présente un formulaire d'envoi de mail si jamais le client souhaite avoir des informations sur par exemple un service.
+            </p>
+        </div>
+        <div id="card">
+            <div id="gauche"><img src="img/photo-rencontrez-nous1.png" style="width:100%"></div>
+            <div id="droite"><img src="img/photo-rencontrez-nous2.png" style="width:100%"></div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h3 class="titre-section">Contactez_moi</h3>
+        <div class="conteneur-form">
+            <form action="">
+                <div class="description-service mitad">
+                    <input type="text" placeholder="Prénom...*" class="input-mitad">
+                    <input type="email" placeholder="Email...*" class="input-mitad">
+                </div>
+                <div class="description-service">
+                    <input type="text" placeholder="Titre..." class="input-full">
+                </div>
+                <div class="description-service">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer !" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <p>Tout les droits réservés Fourel Yannis - 2023</p>
+        <div class="reseaux">
+            <a href="https://github.com/Dramaax"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fourel-yannis-27517b221/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
