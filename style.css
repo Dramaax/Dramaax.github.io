@@ -727,8 +727,82 @@
             font-size: 24px;
             text-transform: uppercase;
             color: #111135;
-            padding-top: 2rem;
+            padding-top: 4rem;
         }
+
+        #veille .h2{
+            padding: 2rem;
+        }
+
+        #veille .hr{
+            padding-bottom: 2rem;
+        }
+        .image-container {
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            background: #fff;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 1rem;
+            margin: 2rem;;
+          }
+          .image {
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            transition: all .5s;
+          }
+          .image img {
+            max-width: 100%;
+            padding:1rem;
+          }
+          .caption {
+            width: 200px;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: rgba(0,0,0,.8);
+            z-index: 2;
+            font-weight: 300;
+            transition: all .5s;
+          }
+          .caption-num1 {
+            position: relative;
+            height: 60px;
+            padding: none;
+            transform: rotate(45deg) translateY(-280px) translateX(-50%);
+          }
+          .bottom {
+            position: absolute;
+            bottom: 15px;
+            left: 0px;
+            right: 0;
+          }
+          .caption-num2 {
+            transform: translateY(140px);
+          }
+
+          .image-container-num2:hover .caption-num2 {
+            transform: translateY(-37px);
+          }
+          .caption-num3 {
+            opacity: 0;
+            width: 300px;
+            text-align:right;
+            padding-right: 14px;
+            transform: translateY(-100%);
+          }
+
+          .image-container-num3:hover .caption-num3 {
+            opacity: 1;
+            transform: translateY(-100%) translateX(-114px);
+          }
+          .break {
+            display: none;
+          }
 
         #veille .titre-section3 {
             text-align: center;
@@ -766,6 +840,13 @@
         }
 
         #veille .description-veille p{
+            font-size: 19px;
+            line-height: 2.25rem;
+        }
+
+        #veille .description-veille p img{
+            align-items: center;
+            margin-bottom: 8rem;
             font-size: 19px;
             line-height: 2.25rem;
         }
